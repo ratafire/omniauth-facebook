@@ -1,1 +1,1 @@
-require 'omniauth/omniauth-facebook-manage-pages'
+require 'omniauth/facebook-manage-pages'
