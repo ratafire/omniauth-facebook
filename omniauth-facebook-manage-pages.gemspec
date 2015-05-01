@@ -1,14 +1,14 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path('../lib', __FILE__)
-require 'omniauth/facebook/version'
+require 'omniauth/facebook-manage-pages/version'
 
 Gem::Specification.new do |s|
-  s.name     = 'omniauth-facebook'
+  s.name     = 'omniauth-facebook-manage-pages'
   s.version  = OmniAuth::Facebook::VERSION
   s.authors  = ['Mark Dodwell', 'Josef Šimánek']
   s.email    = ['mark@madeofcode.com', 'retro@ballgag.cz']
   s.summary  = 'Facebook OAuth2 Strategy for OmniAuth'
-  s.homepage = 'https://github.com/mkdynamic/omniauth-facebook'
+  s.homepage = 'https://github.com/ratafire/omniauth-facebook-manage-pages'
   s.license  = 'MIT'
 
   s.files         = `git ls-files`.split("\n")
