@@ -1,5 +1,5 @@
 require 'omniauth/strategies/oauth2'
-require 'omniauth/facebook-manage-pages/signed_request'
+require 'omniauth/facebookpages/signed_request'
 require 'openssl'
 require 'rack/utils'
 require 'uri'
