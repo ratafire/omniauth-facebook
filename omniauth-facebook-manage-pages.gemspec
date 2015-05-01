@@ -4,7 +4,7 @@ require 'omniauth/facebook/version'
 
 Gem::Specification.new do |s|
   s.name     = 'omniauth-facebook-manage-pages'
-  s.version  = OmniAuth::Facebook::VERSION
+  s.version  = OmniAuth::FacebookManagePages::VERSION
   s.authors  = ['Mark Dodwell', 'Josef Šimánek']
   s.email    = ['mark@madeofcode.com', 'retro@ballgag.cz']
   s.summary  = 'Facebook OAuth2 Strategy for OmniAuth'
