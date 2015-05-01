@@ -6,7 +6,7 @@ require 'uri'
 
 module OmniAuth
   module Strategies
-    class FacebookManagePages < OmniAuth::Strategies::OAuth2
+    class Facebookpages < OmniAuth::Strategies::OAuth2
       class NoAuthorizationCodeError < StandardError; end
 
       DEFAULT_SCOPE = 'email'
@@ -72,7 +72,7 @@ module OmniAuth
         end
       rescue NoAuthorizationCodeError => e
         fail!(:no_authorization_code, e)
-      rescue OmniAuth::FacebookManagePages::SignedRequest::UnknownSignatureAlgorithmError => e
+      rescue OmniAuth::Facebookpages::SignedRequest::UnknownSignatureAlgorithmError => e
         fail!(:unknown_signature_algorithm, e)
       end
 
@@ -118,7 +118,7 @@ module OmniAuth
       private
 
       def signed_request_from_cookie
-        @signed_request_from_cookie ||= raw_signed_request_from_cookie && OmniAuth::FacebookManagePages::SignedRequest.parse(raw_signed_request_from_cookie, client.secret)
+        @signed_request_from_cookie ||= raw_signed_request_from_cookie && OmniAuth::Facebookpages::SignedRequest.parse(raw_signed_request_from_cookie, client.secret)
       end
 
       def raw_signed_request_from_cookie
